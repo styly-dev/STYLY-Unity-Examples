@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224027591875072520}
   - component: {fileID: 223530121116407368}
   - component: {fileID: 95076552426253004}
+  - component: {fileID: 114569836199726766}
   m_Layer: 0
   m_Name: Denkou(Upload to STYLY)
   m_TagString: Untagged
@@ -166,6 +167,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &114569836199726766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1178477759567076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 16
 --- !u!222 &222570498400171646
 CanvasRenderer:
   m_ObjectHideFlags: 1
