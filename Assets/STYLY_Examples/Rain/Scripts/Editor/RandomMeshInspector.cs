@@ -7,7 +7,7 @@ using System.IO;
 [CustomEditor(typeof(RandomMesh))]
 public class RandomMeshInspector : Editor
 {
-    const string k_ExportMeshName = "[Generated]RainMesh.asset"; // 保存するメッシュの名前
+    const string k_ExportMeshName = "[Generated]RainMesh"; // 保存するメッシュの名前
     static readonly Color k_ButtonColor = Color.yellow;
     static readonly Color k_ButtonTextColor = Color.white;
 
@@ -60,11 +60,23 @@ public class RandomMeshInspector : Editor
         var randomMesh = target as RandomMesh;
         var meshFilter = randomMesh.GetComponent<MeshFilter>();
 
+        // 古い内蔵メッシュを削除
+        var meshAssets = AssetDatabase.LoadAllAssetsAtPath(AssetDatabase.GetAssetPath(randomMesh));
+        foreach (var meshAsset in meshAssets)
+        {
+            if (meshAsset is Mesh)
+            {
+                Object.DestroyImmediate(meshAsset, true);
+            }
+        }
+
         // メッシュ作成
         var newMesh = randomMesh.CreateNewMesh();
-        var assetPath = GenerateMeshPath();
-        AssetDatabase.CreateAsset(newMesh, assetPath);
-        randomMesh.GetComponent<MeshFilter>().sharedMesh = newMesh;
+        newMesh.name = k_ExportMeshName;
+        meshFilter.sharedMesh = newMesh;
+
+        // メッシュを内蔵させる
+        AssetDatabase.AddObjectToAsset(newMesh, randomMesh);
 
         randomMesh.OnCreateText = string.Format(
             "【現在のメッシュ情報】\n・雨の粒の数:{0}\n・雨の粒の大きさ:{1}\n・雨を降らせる範囲: {2}",
@@ -73,10 +85,11 @@ public class RandomMeshInspector : Editor
             randomMesh.MeshScale
         );
 
-        // メッシュ保存
+        // 保存
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
     }
+
 
     /// <summary>
     /// メッシュの保存パスを生成(Prefabと同階層)
