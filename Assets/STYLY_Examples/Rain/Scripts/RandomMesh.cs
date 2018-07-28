@@ -9,10 +9,10 @@ using UnityEditor;
 public class RandomMesh : MonoBehaviour
 {
     const string k_MeshName = "[Generated]RainMesh"; // メッシュの名前
-    [SerializeField, Header("雨の粒の数")] int m_TriangleCount = 1500; // 三角形の個数
-    [SerializeField, Header("雨の粒の大きさ")] float m_TriangleScale = 0.02f; // 三角形の大きさ
+    [SerializeField, Header("雨粒の数")] int m_TriangleCount = 1500; // 三角形の個数
+    [SerializeField, Header("雨粒の大きさ")] float m_TriangleScale = 0.02f; // 三角形の大きさ
     [SerializeField, Header("雨を降らせる範囲")] Vector3 m_MeshScale = new Vector3(4f, 4f, 4f); // メッシュの大きさ
-    [SerializeField, HideInInspector] string m_OnCreateText = "メッシュがありません\nメッシュを更新してください";
+    [SerializeField, HideInInspector] string m_OnCreateText = "メッシュ情報がありません\nメッシュを更新してください";
 
     public int TriangleCount { get { return m_TriangleCount; } }
     public float TriangleScale { get { return m_TriangleScale; } }

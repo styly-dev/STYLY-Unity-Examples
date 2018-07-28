@@ -2,10 +2,15 @@
 Shader "Custom/Rain" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" {}
-        _Color ("雨の色", Color) = (1.0, 1.0, 1.0, 0.5) // 雨の色
-        _Speed ("雨が落ちる速さ", Float) = 6.0 
-        _Scale ("雨の長さ", Float) = 4.0
+        _Speed ("［VS］雨が落ちる速さ", Float) = 6.0 
+        _Scale ("［VS］雨の長さ", Float) = 4.0
+        [Space]
+        _Albedo ("［FS］雨 色", Color) = (1.0, 1.0, 1.0, 0.5) 
+        _Emission ("［FS］雨 発光色", Color) = (0.0, 0.0, 0.0, 0.0) 
+        _Specular ("［FS］雨 スペキュラーパワー", Range(0.0, 1.0)) = 0.5 
+        _Gloss ("［FS］雨 スペキュラー強度", Range(0.0, 1.0)) = 0.5 
     }
+
     SubShader {
         Tags {
             "Queue" = "Transparent"
@@ -26,10 +31,15 @@ Shader "Custom/Rain" {
         float remap(float t, float a, float b){
             return clamp((t-a)/(b-a), 0, 1);
         }
-
-        fixed4 _Color;
+        // 頂点シェーダー
         half _Speed;
 		half _Scale;
+
+        // 色
+        half4 _Albedo;
+        half4 _Emission;
+        fixed _Specular;
+        fixed _Gloss;
 
         // 頂点シェーダー関数
         void vert(inout appdata_full v) {
@@ -42,10 +52,14 @@ Shader "Custom/Rain" {
             float2 uv_MainTex;
         };
 
+        // サーフェースシェーダー関数
         void surf(Input IN, inout SurfaceOutput o) {
             half4 c = tex2D(_MainTex, IN.uv_MainTex);
-            o.Albedo = c.rgb * _Color.rgb;
-            o.Alpha  = _Color.a;
+            o.Albedo = c.rgb * _Albedo.rgb;
+            o.Emission = _Emission; 
+            o.Specular = _Specular; 
+            o.Gloss = _Gloss; 
+            o.Alpha = _Albedo.a; 
         }
         ENDCG
     }
