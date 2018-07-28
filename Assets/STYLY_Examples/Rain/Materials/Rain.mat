@@ -24,9 +24,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Gloss: 0.5
+    - _RainDropScale: 4
+    - _RainSpeed: 6
+    - _Range: 4
+    - _Remap: 0.7
     - _Scale: 4
     - _Specular: 0.5
     - _Speed: 6
     m_Colors:
-    - _Albedo: {r: 1, g: 1, b: 1, a: 0.5}
+    - _Albedo: {r: 0.75735295, g: 0.90963495, b: 1, a: 0.128}
     - _Emission: {r: 0, g: 0, b: 0, a: 0}

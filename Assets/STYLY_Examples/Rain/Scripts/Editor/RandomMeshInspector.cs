@@ -79,10 +79,10 @@ public class RandomMeshInspector : Editor
         AssetDatabase.AddObjectToAsset(newMesh, randomMesh);
 
         randomMesh.OnCreateText = string.Format(
-            "【現在のメッシュ情報】\n・雨の粒の数:{0}\n・雨の粒の大きさ:{1}\n・雨を降らせる範囲: {2}",
+            "【現在のメッシュ情報】\n・雨の粒の数:{0}\n・雨の粒の大きさ:{1}\n・雨全体の大きさ: {2}",
             randomMesh.TriangleCount,
             randomMesh.TriangleScale,
-            randomMesh.MeshScale
+            randomMesh.TriangleRange
         );
 
         // 保存
