@@ -1,5 +1,5 @@
 # STYLY-Unity-Examples
-Unity Excamples for STYLY
+Unity Examples for STYLY
 
 ## Getting Started
 * Download or clone this repository.
