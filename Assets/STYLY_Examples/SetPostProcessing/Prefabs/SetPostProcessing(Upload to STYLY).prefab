@@ -54,7 +54,7 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
-    name: FSM
+    name: Set Post Processing FSM
     startState: SetPostProcessing
     states:
     - name: SetPostProcessing
@@ -62,8 +62,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
-        y: 100
+        x: 65
+        y: 102
         width: 153
         height: 16
       isBreakpoint: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
         - useVariable: 1
           name: camera
           tooltip: 
-          showInInspector: 1
+          showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
@@ -97,7 +97,7 @@ MonoBehaviour:
             useVariable: 1
             name: camera
             tooltip: 
-            showInInspector: 1
+            showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -109,7 +109,7 @@ MonoBehaviour:
             useVariable: 1
             name: PostProcessingBehaviourCamera
             tooltip: 
-            showInInspector: 1
+            showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.PostProcessing.PostProcessingBehaviour
             value: {fileID: 0}
@@ -184,10 +184,10 @@ MonoBehaviour:
             networkSync: 0
             value: {x: 0, y: 0, z: 0, w: 0}
           ObjectParameter:
-            useVariable: 0
-            name: 
+            useVariable: 1
+            name: Post Processing Profile
             tooltip: 
-            showInInspector: 0
+            showInInspector: 1
             networkSync: 0
             typeName: UnityEngine.PostProcessing.PostProcessingProfile
             value: {fileID: 11400000, guid: ce224025ea6a5134592dc945c229ec9a, type: 2}
@@ -249,7 +249,7 @@ MonoBehaviour:
         - useVariable: 1
           name: PostProcessingBehaviourCamera
           tooltip: 
-          showInInspector: 1
+          showInInspector: 0
           networkSync: 0
           typeName: UnityEngine.PostProcessing.PostProcessingBehaviour
           value: {fileID: 0}
@@ -287,10 +287,7 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000000000000000000000000000000000000000000
         paramByteDataSize: 00000000000000000000000000000000000000000000000001000000
-    events:
-    - name: FINISHED
-      isSystemEvent: 1
-      isGlobal: 0
+    events: []
     globalTransitions: []
     variables:
       floatVariables: []
@@ -306,14 +303,21 @@ MonoBehaviour:
       - useVariable: 1
         name: camera
         tooltip: 
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
       objectVariables:
       - useVariable: 1
-        name: PostProcessingBehaviourCamera
+        name: Post Processing Profile
         tooltip: 
         showInInspector: 1
+        networkSync: 0
+        typeName: UnityEngine.PostProcessing.PostProcessingProfile
+        value: {fileID: 11400000, guid: ce224025ea6a5134592dc945c229ec9a, type: 2}
+      - useVariable: 1
+        name: PostProcessingBehaviourCamera
+        tooltip: 
+        showInInspector: 0
         networkSync: 0
         typeName: UnityEngine.PostProcessing.PostProcessingBehaviour
         value: {fileID: 0}
@@ -323,8 +327,10 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
-    description: 
+      variableCategoryIDs: 000000000000000000000000
+    description: 'Add PostProcessingBehaviour to Camera
+
+      and Set PostProcessing Profile.'
     docUrl: 
     showStateLabel: 0
     maxLoopCount: 0
