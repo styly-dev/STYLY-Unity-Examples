@@ -113,7 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &115078589
+--- !u!1001 &454083942
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -154,8 +154,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114895161471156042, guid: 793b1bad96bf56d43b1ac3ca2d61341a,
         type: 2}
-      propertyPath: fsm.preprocessed
-      value: 0
+      propertyPath: fsm.variables.intVariables.Array.data[0].value
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 793b1bad96bf56d43b1ac3ca2d61341a, type: 2}
@@ -284,8 +284,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 865269102}
-  m_LocalRotation: {x: -0.08871109, y: 0.9030574, z: -0.22616671, w: -0.3542122}
-  m_LocalPosition: {x: 21.252277, y: 16.093067, z: 18.519684}
+  m_LocalRotation: {x: 0.09348669, y: 0.5467366, z: 0.06159717, w: -0.82978624}
+  m_LocalPosition: {x: 28.826157, y: 3.7929754, z: -12.926298}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
