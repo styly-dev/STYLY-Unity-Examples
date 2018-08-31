@@ -1339,7 +1339,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 010101010101010101010101010101
-        actionIsOpen: 010101010101010101010101010101
+        actionIsOpen: 000000000000000001010101010101
         actionStartIndex: 000000000300000006000000090000000c0000000f00000012000000180000001e000000230000002a0000002c0000002d0000003100000034000000
         actionHashCodes: 2ee017042ee017042ee017042ee017042ee017042ee01704dfd72a04dfd72a04bf83c9005552ad05978a9b035c004505ea32a105603dd90509faa102
         unityObjectParams: []
@@ -2454,7 +2454,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: SET BG WHITE
       isSystemEvent: 0
-      isGlobal: 1
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables:

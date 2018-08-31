@@ -152,11 +152,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114895161471156042, guid: 793b1bad96bf56d43b1ac3ca2d61341a,
-        type: 2}
-      propertyPath: fsm.variables.intVariables.Array.data[0].value
-      value: 500
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 793b1bad96bf56d43b1ac3ca2d61341a, type: 2}
   m_IsPrefabParent: 0
