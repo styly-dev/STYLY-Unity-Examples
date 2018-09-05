@@ -1,1 +1,1 @@
-﻿https://styly.cc/?p=4797&preview=true&lang=ja
+﻿# Unityで距離に伴って音量を変える方法 https://styly.cc/tips/unity_3dsound/?lang=ja
