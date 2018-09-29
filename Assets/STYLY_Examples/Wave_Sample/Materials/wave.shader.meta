@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 1d87c22d40bd0e14199b983fdfd97dc0
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _WaveHeighmapt: {fileID: 2800000, guid: dae2e2f60f56f414b90e5a98d3f1528b, type: 3}
+  - _Waveheightmap2: {fileID: 2800000, guid: ce46ac9d8d1db7343bb873a7b4dc9427, type: 3}
+  - _Wavenormal: {fileID: 2800000, guid: d4d83900694d9b94ba199333b9644122, type: 3}
+  - _AlphaTexture: {fileID: 2800000, guid: bb42c969527a4b54a927bc96cf1d1b61, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
