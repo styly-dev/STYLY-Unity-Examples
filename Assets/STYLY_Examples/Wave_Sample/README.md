@@ -2,9 +2,9 @@
 
 
 ## document
-https://styly.cc/?p=5702&preview=true&lang=ja
-https://styly.cc/?p=5783&preview=true&lang=ja
-https://styly.cc/?p=5822&preview=true&lang=ja
+https://styly.cc/ja/tips/shaderforge_wave01/  
+https://styly.cc/ja/tips/shaderforge_wave02/  
+https://styly.cc/ja/tips/particlewave/  
 
 ## STYLY Gallery Page.
 http://gallery.styly.cc/Takano/41b16b0f-c2ed-11e8-b34d-4783bb2170d0
