@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 02b_Mosaic_Kanagwa-OkiNami-Ura
+  m_Shader: {fileID: 4800000, guid: 0bea53e8cfe18de4fa316e8a42527747, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 96e369ada7f0c3244aa05c376b0c7803, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: -0.26, y: 0}
+    m_Floats:
+    - _Glossiness: 0
+    - _Metallic: 0
+    - _MosaicResolution: 16
+    - _MosaicSize: 22
+    - _Mosaic_X: 0
+    - _Mosaic_Y: 0
+    - _RandomSeed: 0
+    - _TimeScale: 0
+    - _UV_Offset_X: 0
+    - _UV_Offset_Y: 0
+    - _UV_X: 0
+    - _UV_Y: 0
+    m_Colors:
+    - _Color: {r: 1.1728423, g: 1.1728423, b: 1.1728423, a: 1}
+    - _Color1: {r: 1, g: 1, b: 1, a: 1}
+    - _Color2: {r: 1, g: 0.6662315, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
