@@ -1,10 +1,10 @@
 ﻿Shader "Custom/MosaicTexture" {
 	Properties{
-		_MainTex("テクスチャ", 2D) = "white" {}
+		_MainTex("Texture", 2D) = "white" {}
 		[Space]
-		_Color("カラー", Color) = (1,1,1,1)
-		[HDR]_EmissionColor("発光カラー", Color) = (0,0,0,1)
-		_MosaicResolution("モザイクの細かさ", Range(2, 512)) = 32
+		_Color("Main Color", Color) = (1,1,1,1)
+		[HDR]_EmissionColor("Emission Color", Color) = (0,0,0,1)
+		_MosaicResolution("Mosaic Resolution", Range(2, 512)) = 32
 
 		[Space]
 		_Glossiness("Smoothness", Range(0,1)) = 0
@@ -34,11 +34,12 @@
 		UNITY_INSTANCING_BUFFER_START(Props)
 		UNITY_INSTANCING_BUFFER_END(Props)
 			
-		// 2D Random
+		// 2D Random Function
 		float random(float2 st) {
 			return frac((sin(dot(st.xy, float2(12.9898, 78.233)))) * 43758.5453123);
 		}
 
+		// Surface Shader
 		void surf(Input IN, inout SurfaceOutputStandard o) {
 			float2 uv = IN.uv_MainTex;
 			uv = floor(uv * _MosaicResolution) / _MosaicResolution;
