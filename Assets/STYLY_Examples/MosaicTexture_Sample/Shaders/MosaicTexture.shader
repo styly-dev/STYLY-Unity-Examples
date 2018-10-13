@@ -4,7 +4,9 @@
 		[Space]
 		_Color("Main Color", Color) = (1,1,1,1)
 		[HDR]_EmissionColor("Emission Color", Color) = (0,0,0,1)
-		_MosaicResolution("Mosaic Resolution", Range(2, 512)) = 32
+		_MosaicResolution("Mosaic Resolution", Range(2, 64)) = 32
+		_MosaicResolutionX("X Mosaic Resolution", Range(1, 4)) = 1
+		_MosaicResolutionY("Y Mosaic Resolution", Range(1, 4)) = 1
 
 		[Space]
 		_Glossiness("Smoothness", Range(0,1)) = 0
@@ -30,6 +32,8 @@
 		half _Glossiness;
 		half _Metallic;
 		int _MosaicResolution;
+		int _MosaicResolutionX;
+		int _MosaicResolutionY;
 
 		UNITY_INSTANCING_BUFFER_START(Props)
 		UNITY_INSTANCING_BUFFER_END(Props)
@@ -39,10 +43,11 @@
 			return frac((sin(dot(st.xy, float2(12.9898, 78.233)))) * 43758.5453123);
 		}
 
+#define MOSAIC (_MosaicResolution * float2(_MosaicResolutionX, _MosaicResolutionY))
 		// Surface Shader
 		void surf(Input IN, inout SurfaceOutputStandard o) {
 			float2 uv = IN.uv_MainTex;
-			uv = floor(uv * _MosaicResolution) / _MosaicResolution;
+			uv = floor(uv * MOSAIC) / MOSAIC;
 
 			fixed4 c = tex2D(_MainTex, uv);
 			o.Albedo = c.rgb * _Color;
