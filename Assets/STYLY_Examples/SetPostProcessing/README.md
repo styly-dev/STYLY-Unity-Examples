@@ -3,7 +3,7 @@
 This example requests Playmaker and Post Processing Stack Asset to run.
 
 ## document
-https://styly.cc/tips/
+https://styly.cc/tips/use-post-processing-stack-with-styly_afjk_postprocessingstack/
 
 ## Playmaker:link to Unity Assetstore.
 https://assetstore.unity.com/packages/tools/visual-scripting/playmaker-368
