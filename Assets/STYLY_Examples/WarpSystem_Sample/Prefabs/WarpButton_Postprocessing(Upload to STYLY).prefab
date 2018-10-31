@@ -628,10 +628,10 @@ MonoBehaviour:
             useVariable: 1
             name: PostProcessingProfile
             tooltip: 
-            showInInspector: 0
+            showInInspector: 1
             networkSync: 0
             typeName: UnityEngine.PostProcessing.PostProcessingProfile
-            value: {fileID: 0}
+            value: {fileID: 11400000, guid: 6d61b9ec9af6f85439e4482af023f97f, type: 2}
           MaterialParameter:
             useVariable: 0
             name: 
@@ -661,7 +661,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: 
+            enumName: HutongGames.PlayMaker.None
             intValue: 0
           ArrayParameter:
             useVariable: 0
@@ -670,7 +670,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             type: -1
-            objectTypeName: 
+            objectTypeName: UnityEngine.Object
             floatValues: []
             intValues: 
             boolValues: 
@@ -1391,6 +1391,76 @@ MonoBehaviour:
         - storeGameObject
         paramDataPos: 00000000
         paramByteDataSize: 00000000
+    - name: State 3
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 374.58594
+        y: 691.75
+        width: 221
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.DestroyComponent
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 9bd6f801
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: MainCamera
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: UnityEngine.PostProcessing.PostProcessingBehaviour
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000
+        paramName:
+        - gameObject
+        - component
+        paramDataPos: 0000000000000000
+        paramByteDataSize: 0000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -1404,7 +1474,13 @@ MonoBehaviour:
     - name: CHECK_CAMERA_NEXT
       isSystemEvent: 0
       isGlobal: 0
+    - name: Global_TriggerPressDown_L
+      isSystemEvent: 0
+      isGlobal: 0
     - name: Global_TriggerPressDown_R
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Global_TriggerPressUp_L
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions:
@@ -1421,6 +1497,14 @@ MonoBehaviour:
         isSystemEvent: 1
         isGlobal: 0
       toState: wait
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Global_TriggerPressDown_L
+        isSystemEvent: 0
+        isGlobal: 0
+      toState: State 3
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
@@ -1482,10 +1566,10 @@ MonoBehaviour:
       - useVariable: 1
         name: PostProcessingProfile
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         typeName: UnityEngine.PostProcessing.PostProcessingProfile
-        value: {fileID: 0}
+        value: {fileID: 11400000, guid: 6d61b9ec9af6f85439e4482af023f97f, type: 2}
       materialVariables: []
       textureVariables: []
       arrayVariables: []
