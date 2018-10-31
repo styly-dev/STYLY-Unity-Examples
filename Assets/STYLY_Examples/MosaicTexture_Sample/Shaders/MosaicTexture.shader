@@ -35,9 +35,6 @@
 		int _MosaicResolutionX;
 		int _MosaicResolutionY;
 
-		UNITY_INSTANCING_BUFFER_START(Props)
-		UNITY_INSTANCING_BUFFER_END(Props)
-
 #define MOSAIC (_MosaicResolution * float2(_MosaicResolutionX, _MosaicResolutionY))
 
 		// Surface Shader

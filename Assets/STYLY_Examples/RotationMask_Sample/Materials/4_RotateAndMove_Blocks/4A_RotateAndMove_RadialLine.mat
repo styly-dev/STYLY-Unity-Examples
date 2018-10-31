@@ -30,6 +30,7 @@ Material:
     - _Angle: 0
     - _Glossiness: 0.5
     - _Metallic: 0
+    - _MoveScale: 0.5
     - _RotationSpeed: 1
     - _ShiftSpeed: 20
     m_Colors:
