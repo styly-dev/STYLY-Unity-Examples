@@ -25,9 +25,9 @@ Material:
     m_Floats:
     - _Glossiness: 0.507
     - _IntervalSec: 7
-    - _LineSize: 0.35
+    - _LineSize: 0.035
     - _LineSmooth: 4.71
-    - _LineSpeed: 4
+    - _LineSpeed: 5
     - _Metallic: 0
     - _TrajectorySize: 6.69
     m_Colors:
