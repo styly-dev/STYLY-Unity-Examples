@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 5A_RotateAndMove_RadialLine
+  m_Shader: {fileID: 4800000, guid: e54a0c4af25f64043b6121c782f15eda, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: 1826f96c4ecdcf441bcaa3bc08e9fa26, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OverTex:
+        m_Texture: {fileID: 2800000, guid: f0adb131c3e3fc04bbc83ab978fb76e1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Angle: 0
+    - _Glossiness: 0.5
+    - _Metallic: 0
+    - _RotationSpeed: 0.3
+    - _ScaleMax: 2
+    - _ScaleMin: 1
+    - _ScaleSpeed: 4
+    - _ShiftSpeed: 20
+    m_Colors:
+    - _BgColor: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0, g: 1, b: 0.90400004, a: 1}
