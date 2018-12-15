@@ -1,4 +1,4 @@
-#Timeline_Sample - unity example
+# Timeline_Sample - unity example
 
 This example requests Raw Mocap Data for Mecanim to run.
 
