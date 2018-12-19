@@ -11,7 +11,7 @@ This example requests Playmaker and Move Motion Free Pack to run.
 http://gallery.styly.cc/Takano/ab0cb334-010a-11e9-b34d-4783bb2170d0
 
 ## Move Motion Free Pack:link to Unity Assetstore.
-https://assetstore.unity.com/packages/3d/animations/raw-mocap-data-for-mecanim-5330
+https://assetstore.unity.com/packages/3d/animations/move-motion-free-pack-25900
 
 ## Playmaker:link to Unity Assetstore.
 https://assetstore.unity.com/packages/tools/visual-scripting/playmaker-368
