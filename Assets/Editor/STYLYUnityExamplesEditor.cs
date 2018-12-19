@@ -3,6 +3,7 @@ using UnityEditor;
 using System;
 using System.Reflection;
 using UnityEditor.Callbacks;
+using System.Collections.Generic;
 
 [InitializeOnLoad]
 public class STYLYUnityExamplesEditor : MonoBehaviour
@@ -54,11 +55,43 @@ public class STYLYUnityExamplesEditor : MonoBehaviour
 
         if (isPostProcessingStackImported)
         {
-            PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildPipeline.GetBuildTargetGroup(EditorUserBuildSettings.activeBuildTarget), POST_PROCESSING_DEFINE);
+            AddSymbol(POST_PROCESSING_DEFINE);
         }
         else
         {
-            PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildPipeline.GetBuildTargetGroup(EditorUserBuildSettings.activeBuildTarget), "");
+            RemoveSymbol(POST_PROCESSING_DEFINE);
         }
+    }
+
+    private static List<string> GetDefineSymbols()
+    {
+        return new List<string>(PlayerSettings.GetScriptingDefineSymbolsForGroup(BuildPipeline.GetBuildTargetGroup(EditorUserBuildSettings.activeBuildTarget)).Split(';'));
+    }
+
+    private static void AddSymbol(string symbol)
+    {
+        var symbolList = GetDefineSymbols();
+
+        if( symbolList.IndexOf(symbol) < 0 )
+        {
+            Debug.Log("add symbol");
+            symbolList.Add(symbol);
+            SetDefineSymbols(symbolList);
+        }
+        
+    }
+
+    private static void RemoveSymbol(string symbol)
+    {
+        var symbolList = GetDefineSymbols();
+        
+        symbolList.Remove(symbol);
+
+        SetDefineSymbols(symbolList);
+    }
+
+    private static void SetDefineSymbols(List<string> symbols)
+    {
+        PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildPipeline.GetBuildTargetGroup(EditorUserBuildSettings.activeBuildTarget), string.Join(";", symbols.ToArray()));
     }
 }
