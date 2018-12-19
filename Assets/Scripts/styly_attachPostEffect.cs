@@ -1,4 +1,8 @@
-﻿using System.Collections;
+﻿// Please Import Post Processing Stack from Unity Assetstore.
+// https://assetstore.unity.com/packages/essentials/post-processing-stack-83912
+#if POSTPROCESSINGSTACK
+
+using System.Collections;
 using UnityEngine;
 using UnityEngine.PostProcessing;
 
@@ -78,3 +82,5 @@ public class styly_attachPostEffect : MonoBehaviour {
 
     }
 }
+
+#endif // POSTPROCESSINGSTACK
