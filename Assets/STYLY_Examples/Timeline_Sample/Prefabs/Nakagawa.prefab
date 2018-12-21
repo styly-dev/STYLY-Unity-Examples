@@ -949,8 +949,8 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1466471861309482}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 434f5619363a3284d9843e5243a1ca11, type: 3}
-  m_Controller: {fileID: 9100000, guid: 93875db479eb1524a845f8d46f0dbc2d, type: 2}
+  m_Avatar: {fileID: 9000000, guid: c4de7b455171a804685bdef6448f90f5, type: 3}
+  m_Controller: {fileID: 9100000, guid: 188955b771063f142a41ecaa27d10241, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -1041,7 +1041,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1466471861309482}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 6e570aaed3e492545a6904e544de3a79, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: 01099770de57e9842aa500d7cd69acbd, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -1049,5 +1049,7 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 114381990897545204, guid: 6e570aaed3e492545a6904e544de3a79, type: 2}
     value: {fileID: 1466471861309482}
+  - key: {fileID: 114345192866978298, guid: 01099770de57e9842aa500d7cd69acbd, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
