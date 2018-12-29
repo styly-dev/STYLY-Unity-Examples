@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sample02_Box
+  m_Shader: {fileID: 4800000, guid: 5ff86a13b7fd96e4ca68fceddd7eb13f, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 79aa368f6280bb444b2116605dc696c3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BoxScale: 0.84
+    - _CameraDegree_Side: 0
+    - _CameraDegree_Up: 28.48
+    - _DistancePower: 0.67
+    - _DistanceScale: 3.56
+    - _ObjectInterval: 3.67
+    - _ObjectSize: 0.54
+    - _RaymarchStartDistance: 3.26
+    m_Colors:
+    - _BgColor: {r: 1, g: 0.948586, b: 0, a: 1}
+    - _BoxSize: {r: 1, g: 1, b: 1, a: 0}
+    - _CameraMove: {r: 0, g: 0, b: 1, a: 0}
+    - _CameraSpeed: {r: 0, g: 0, b: 1, a: 0}
+    - _Color1: {r: 0, g: 0.21379304, b: 1, a: 1}
+    - _Color2: {r: 0.7160242, g: 0.7058823, b: 1, a: 0}
+    - _DistanceSmoothstep: {r: 0, g: 1.23, b: 0, a: 0}
+    - _ObjectColor: {r: 0, g: 0.46583885, b: 0, a: 1}
+    - _Smoothstep: {r: 0, g: 0.41, b: 0, a: 0}
