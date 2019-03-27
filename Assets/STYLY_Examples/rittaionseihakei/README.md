@@ -1,4 +1,4 @@
 # rittaionseihakei
 
 ## document
-https://styly.cc/tips/dot-line_playmaker（記事URL)
+https://styly.cc/tips/rittaionseihakei_mikkabouzu_rittaionseihakei/
