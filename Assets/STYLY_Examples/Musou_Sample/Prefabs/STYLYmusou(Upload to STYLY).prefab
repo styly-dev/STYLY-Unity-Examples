@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4182012013140698}
   - component: {fileID: 114756928414774360}
   m_Layer: 0
-  m_Name: STYLYmusou
+  m_Name: STYLYmusou(Upload to STYLY)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
