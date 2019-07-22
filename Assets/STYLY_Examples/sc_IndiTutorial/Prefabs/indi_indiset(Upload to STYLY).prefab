@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 111677373457016752}
   - component: {fileID: 114232563248016224}
   m_Layer: 0
-  m_Name: indi_indiset
+  m_Name: indi_indiset(Upload to STYLY)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
