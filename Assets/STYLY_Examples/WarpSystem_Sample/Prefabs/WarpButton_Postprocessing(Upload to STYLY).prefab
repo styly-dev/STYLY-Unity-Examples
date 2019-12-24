@@ -422,44 +422,22 @@ MonoBehaviour:
         linkConstraint: 0
         colorIndex: 0
       actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.TriggerEvent
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 9c512400
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
         unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 
+        fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -472,22 +450,16 @@ MonoBehaviour:
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
-        stringParams:
-        - Global_TriggerPressDown_R
-        byteData: 00000000
+        stringParams: []
+        byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000007000000120000001700000013000000
-        paramName:
-        - gameObject
-        - trigger
-        - collideTag
-        - sendEvent
-        - storeCollider
-        paramDataPos: 0000000000000000000000000000000000000000
-        paramByteDataSize: 0000000004000000000000000000000000000000
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     - name: State 2
       description: 
       colorIndex: 0
@@ -552,10 +524,10 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            typeName: UnityEngine.PostProcessing.PostProcessingBehaviour
+            typeName: UnityEngine.Object
             value: {fileID: 0}
-          TargetTypeName: UnityEngine.PostProcessing.PostProcessingBehaviour
-          PropertyName: profile
+          TargetTypeName: UnityEngine.Object
+          PropertyName: 
           BoolParameter:
             useVariable: 0
             name: 
@@ -625,13 +597,13 @@ MonoBehaviour:
             networkSync: 0
             value: {x: 0, y: 0, z: 0, w: 0}
           ObjectParameter:
-            useVariable: 1
-            name: PostProcessingProfile
+            useVariable: 0
+            name: 
             tooltip: 
-            showInInspector: 1
+            showInInspector: 0
             networkSync: 0
-            typeName: UnityEngine.PostProcessing.PostProcessingProfile
-            value: {fileID: 11400000, guid: 6d61b9ec9af6f85439e4482af023f97f, type: 2}
+            typeName: 
+            value: {fileID: 0}
           MaterialParameter:
             useVariable: 0
             name: 
@@ -661,7 +633,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: HutongGames.PlayMaker.None
+            enumName: 
             intValue: 0
           ArrayParameter:
             useVariable: 0
@@ -670,7 +642,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             type: -1
-            objectTypeName: UnityEngine.Object
+            objectTypeName: 
             floatValues: []
             intValues: 
             boolValues: 
@@ -835,7 +807,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: fc1dcf9a-1e51-4c28-b99d-28b285a44026
+          value: 46c2c032-abdb-49de-93ba-80d57118cea8
         - useVariable: 0
           name: 
           tooltip: 
@@ -847,7 +819,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: a8536a2b-7f56-4e23-aa26-143b0bd158f0
+          value: 72361dad-4241-4975-a553-2fe7e751f3f5
         - useVariable: 0
           name: 
           tooltip: 
@@ -1561,7 +1533,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 0
         networkSync: 0
-        typeName: UnityEngine.PostProcessing.PostProcessingBehaviour
+        typeName: UnityEngine.Object
         value: {fileID: 0}
       - useVariable: 1
         name: PostProcessingProfile
